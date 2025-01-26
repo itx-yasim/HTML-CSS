@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+body{
+    background-color:gainsboro;
+    font-weight: 400;
+    font-family: "Segoe UI", "Helvetica Neue", Helvetica,"Lucida Grande",Arial, "Ubuntu" , "Cantarell","Fira Sans",sans-serif;
+}
+.main-div{
+    background-color:white;
+    padding: 20px;
+    border-radius: 20px;
+}
+.text{
+    padding: 20px;
+}
+.cards-div{
+    display: flex;
+    gap:50px;
+    height: 200px;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    background-color: white;
+    width: 400px;
+    height: 150px;
+    border-radius:10px;
+    box-shadow:2px 2px 10px 0 rgb(27, 27, 27) , 0 0 0 0 rgb(48, 47, 47);
+}
+.card-inside{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:20px;
+    height: 30px;
+}
+
+
+
+
+@media (max-width:768px)
+    {
+    .main-div{
+        background-color:white;
+        padding: 10px;
+        border-radius: 10px;
+        width: 100%;
+        box-sizing: border-box;
+        }
+    .text{
+        padding:10px;
+        text-align:center;
+        }    
+    .cards-div{
+        display: flex;
+        gap:30px;
+        height: auto;
+        border-radius: 10px;
+        justify-content: center;
+        align-items: center;
+        flex-direction:column;
+        margin-bottom: 20px;
+        }
+    .card{
+        background-color: blanchedalmond;
+        width: 300px;
+        height: 110px;
+        border-radius:5px;
+        box-shadow:2px 2px 10px 0 rgb(27, 27, 27) , 0 0 0 0 rgb(48, 47, 47);
+        }
+    .card-inside{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding:10px;
+        height: 20px;
+        }
+
+    }
+
+
+    @media (min-width:769px) and (max-width:1023px)
+    {
+        .main-div{
+        background-color:white;
+        padding: 15px;
+        border-radius: 15px;
+        width: 100%;
+        box-sizing: border-box;
+        }
+    .text{
+        padding:15px;
+        text-align:center;
+        }    
+    .cards-div{
+        display: flex;
+        gap:40px;
+        height: auto;
+        border-radius: 15px;
+        justify-content: center;
+        align-items: center;
+        flex-direction:column;
+        margin-bottom: 25px;
+        }
+    .card{
+        background-color:khaki;
+        width: 350px;
+        height: 130px;
+        border-radius:8px;
+        box-shadow:2px 2px 10px 0 rgb(27, 27, 27) , 0 0 0 0 rgb(48, 47, 47);
+        }
+    .card-inside{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding:15px;
+        height: 25px;
+        }
+
+    }
+    @media (min-width:1024px) and (max-width:1300px)
+    {
+        .main-div{
+        background-color:white;
+        padding: 17px;
+        border-radius: 17px;
+        width: 100%;
+        box-sizing: border-box;
+        }
+    .text{
+        padding:17px;
+        text-align:center;
+        }    
+    .cards-div{
+        display: flex;
+        gap:45px;
+        height: auto;
+        border-radius: 17px;
+        justify-content: center;
+        align-items: center;
+        flex-wrap:wrap;
+        margin-bottom: 30px;
+        }
+    .card{
+        background-color: blanchedalmond;
+        width: 370px;
+        height: 140px;
+        border-radius:10px;
+        box-shadow:2px 2px 10px 0 rgb(27, 27, 27) , 0 0 0 0 rgb(48, 47, 47);
+        }
+    .card-inside{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding:17px;
+        height: 27px;
+        }
+       
+    }
+    </style>
+</head>
+<body>
+    <div class="main-div">
+       <div class="text">
+        <h1>
+            PLANS
+        </h1>
+        <P>Available plans to purchase in Text Brew</P>
+       </div> 
+       <div class="cards-div">     
+<div class="card">
+    <div class="card-inside">
+        <p>Pay as you go</p>
+        <p><b>€ 30.00</b></p>
+    </div>
+   <div style="margin: 20px;">€ 0.85 per generated text / no subscription</div>
+    </div>
+<div class="card">
+    <div class="card-inside">
+        <p>Hobby</p>
+        <p><b>€ 49.00</b></p>
+    </div>
+   <div style="margin: 20px;">€ 0.20 per generated text / monthly subscription</div>
+    </div>
+<div class="card">
+    <div class="card-inside">
+        <p>Startup</p>
+        <p><b>€ 99.00</b></p>
+    </div>
+   <div style="margin: 20px;">€ 0.10 per generated text / monthly subscription</div>
+    </div>
+
+<div class="card">
+    <div class="card-inside">
+        <p>Business</p>
+        <p><b>€ 349.00</b></p>
+    </div>
+   <div style="margin: 20px;">€ 0.03 per generated text / monthly subscription</div>
+    </div>
+       </div>
+    </div>
+</div>
+</body>    
+</html>
