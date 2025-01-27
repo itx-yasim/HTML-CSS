@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color:#1a1a1a;
+        color:white;
+        font-size: 20px;
+    }
+    .main-div{
+        margin: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2px;
+    }
+    .child-div{
+        width: 550px;
+        height: 550px;
+    }
+    .b1{
+        font-size: 50px;
+    }
+    .p1{
+        color: blue;
+    }
+    /* button here */
+    button{
+        border: none;
+        background-color: blue;
+        padding: 23px 55px;
+        border-radius: 40px;
+        cursor:pointer ;
+        color:WHITE;
+        font-size: 20px;
+    }
+    .buton-div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top:30px;
+    }
+    .sign{
+        margin-top: 100px;
+    }
+    input{
+       width: 350px;
+       border-radius: 30px;
+       border: none;
+       background-color: #f1f1f1;
+       padding:15px 10px 15px 10px;
+       font-size: 15px;
+       outline: none;/*outline*/
+    }
+    .button-submit{
+        border: none;
+        background-color: blue;
+        padding: 15px 10px;
+        border-radius: 40px;
+        width: 100px;
+        cursor:pointer ;
+        color:WHITE;
+        font-size: 15px;
+    }
+    @media (max-width:768px)
+    {
+        body{
+            font-size:12px;
+        }
+        .main-div{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction:column;  
+            box-sizing: border-box; 
+        }
+        .child-div{
+            width: 400px;
+            height: 300px;
+        }        
+        .b1{
+            font-size:35px;
+        }
+        button{
+            border-radius:20px;
+            font-size:10px;
+            padding:20px 50px;
+        }
+        .sign{
+            margin-top:30px;
+        }
+        input
+        {
+            width: 300px;
+            border-radius: 15px;
+            border: none;
+            background-color: #f1f1f1;
+            padding:10px 0 10px 5px;
+            font-size: 10px;
+        }
+        .button-submit{
+            border: none;
+            background-color: blue;
+            padding: 10px 5px;
+            border-radius: 20px;
+            width: 50px;
+            cursor:pointer ;
+            color:WHITE;
+            font-size: 8px;
+        }
+    }
+</style>
+<body>
+<div class="main-div">
+    <div class="child-div">
+        <div>
+            <b class="b1">GET YOUR FREE<br>CONSULTATION NOW!</b>
+        </div>
+        <div>
+            <p>Small or big,your business will love our financial help and business<br>
+                consultations.We are happy when our clients are too !
+            </p>
+        </div><br><br>
+        <div>
+            Badar Colony,Nursery Block.XYZTown,<br>
+            Lahore Punjab
+        </div><br><br>
+        <div>
+            <p class="p1"><b>+92 325 9875919</b><br>
+            shanisir@gmail.com</p>
+        </div>
+    </div>
+    <div class="child-div">
+        <!--button here-->
+        <div class="buton-div">
+            <button type="button" onclick="alert('ABC')"><b>FREE CONSULTATION</b></button>
+        </div>
+        <div class="sign">
+            <b class="b1">SIGN ME UP!</b>
+        </div>
+        <div>
+            <p>
+                Actually, this is quite simple to achieve - because each time<br>
+                we help them in sorting out different accounting intricacies<br>
+                or save the day before filing the taxes, they are happy<br>
+                indeed. 
+            </p>
+        </div>
+        <!--enter email button here-->
+        <div>
+            <input type="text" placeholder="Enter a valid Email Address" name="email">
+            <button class="button-submit" type="submit" ><b>SUBMIT</b></button>
+        </div>
+    </div>
+</div>
+</body>
+</html>
